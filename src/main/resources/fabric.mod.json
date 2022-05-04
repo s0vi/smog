@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "smog",
+  "version": "${version}",
+  "name": "Smog",
+  "description": "Don't pollute your world!",
+  "authors": [
+    "sovi"
+  ],
+  "contact": {
+    "website": "https://s0vi.dev",
+    "repo": "https://github.com/s0vi/Smog"
+  },
+  "license": "AGPL-3.0",
+  "icon": "assets/smog/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.s0vi.smog.client.SmogClient"
+    ],
+    "main": [
+      "me.s0vi.smog.Smog"
+    ]
+  },
+  "mixins": [
+    "smog.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.4",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
